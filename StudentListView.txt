@@ -1,0 +1,16 @@
+namespace aplikacija.Models
+{
+    public class StudentListView
+    {
+        public string Filter { get; set; }
+        public IEnumerable<Student> Students { get; set; }
+        public IEnumerable<SmerFilter> SmerFilters { get; set; }
+    }
+
+    public class SmerFilter
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public bool IsChecked { get; set; }
+    }
+}

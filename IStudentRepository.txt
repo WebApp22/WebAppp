@@ -1,0 +1,15 @@
+using aplikacija.Data;
+using aplikacija.Models;
+
+namespace aplikacija.Repository
+{
+    public interface IStudentRepository
+    {
+         IEnumerable<Student> GetAll();
+         IEnumerable<Student> GetWithFilter(string filter, int[]smerovi);
+         Student? GetSingle(int id);
+        int Save(Student student);
+        void Delete(int id);
+
+    }
+}

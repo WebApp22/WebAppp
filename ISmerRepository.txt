@@ -1,0 +1,14 @@
+using aplikacija.Data;
+using aplikacija.Models;
+
+namespace aplikacija.Repository
+{
+    public interface ISmerRepository
+    {
+        List<Smer> GetAll();
+        List<Smer>GetWithFilter(string filter);
+        Smer GetSingle(int id);
+        int Save(Smer smer);    
+        void Delete(int id);    
+    }
+}
